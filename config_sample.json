@@ -1,0 +1,31 @@
+{
+  "job_search": {
+    "url": "https://www.linkedin.com/jobs/search/?currentJobId=3831662726&geoId=105080838&keywords=software%20developer%20computer%20science&start=0",
+    "max_pages": 100
+  },
+  "job_posting": {
+    "url": "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}"
+  },
+  "filters": {
+    "excluded_title_kws": ["intern", "director", "junior"],
+    "filter1": "Given the above job information, does the job allow remote work? Please reply just with 'YES' or 'NO'",
+    "filter2": "Given the above job information, does the job allow to have a side gig? Please reply just with 'YES' or 'NO'."
+  },
+  "cover_letter": {
+    "prompt": "Given my resume and the job info provided, can you draft a cover letter that highlights my strengths for this role and describes me as a great candidate for the hiring manager? Make sure to mention only the information provided in my resume that make me a good candidate for the position. Please reply ONLY with the cover letter draft, no other text."
+  },
+  "telegram": {
+    "token": "APP_TOKEN",
+    "allowed_users": [123467890, 9876543210]
+  },
+  "ai_model": {
+    "api_url": "http://localhost:11434/api/generate",
+    "model_name": "llama3"
+  },
+  "paths": {
+    "scraped_jobs_dir": "scraped_jobs",
+    "resume_file": "resume.txt",
+    "cover_letters_dir": "cover_letters",
+    "parsed_jobs_file": "parsed_jobs.txt"
+  }
+}

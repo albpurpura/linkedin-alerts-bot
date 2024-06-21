@@ -1,0 +1,5 @@
+config.json
+*_personalized.py
+*.txt
+__pycache__
+scraped_jobs
