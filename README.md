@@ -2,11 +2,12 @@
 
 This repository contains a Telegram bot that automates job searching, filtering, and notification processes. 
 It scrapes job listings, filters them based on user-defined criteria, and sends notifications about relevant positions.
+It uses the ollama library to evaluate job posting based on custom requirements with an LLM running locally on your computer.
 
 ## Features
 
 - Scrapes job listings from a specified job search website
-- Filters jobs based on customizable criteria using an AI model
+- Filters jobs based on customizable criteria using an LLM model like llama3 running locally with ollama
 - Generates cover letter drafts for matching job positions
 - Sends job notifications via Telegram bot
 - Configurable settings through a JSON file
@@ -14,7 +15,7 @@ It scrapes job listings, filters them based on user-defined criteria, and sends 
 ## Setup
 
 1. Clone the repository
-2. Install dependencies
+2. Install dependencies: [ollama](https://ollama.com/library/llama3) and `pip install -r requirements.txt`
 3. Set up your Telegram bot:
 - Create a new bot using BotFather on Telegram
 - Note down the bot token
